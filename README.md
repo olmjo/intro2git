@@ -9,11 +9,11 @@ of **git** and **github** given as a *polmeth* seminar in the
 
 It was created with *pandoc*.
 
-## Contact
-Any questions or comments can be directed to [me](mailto:jpolmsted@gmail.com).
-
 ## Layout
 - source files are in `./doc/in/`
-- style files are in `./style/`
-- images used in the presentation are in `./images/`
-- pandoc-generated slides (and the abstract) are in `./doc/out/`
+- images used in the presentation are in `./img/`
+- pandoc-generated slides (and the abstract) are built to `./doc/out/`
+- portable builds require a simple edit in the Makefile
+
+## Contact
+Any questions or comments can be directed to <jolmsted@princeton.edu>
