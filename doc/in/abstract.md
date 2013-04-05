@@ -1,3 +1,7 @@
+% Managing (collaborative) projects efficiently through version control software: An introduction to *git*
+% Jonathan Olmsted
+% Jan 25 2013
+
 # Abstract
 
 Version control software is well-suited to the needs of academic researchers,
