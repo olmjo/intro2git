@@ -1,4 +1,5 @@
 P2STYLES=~/PDstyles/
+# P2STYLES=
 
 all : presentation abstract
 
