@@ -16,7 +16,7 @@
 
 
 # Preliminaries
-### Caveats
+## Caveats
 
 + this is not the authoritative resource on *git* or [github.com](http://www.github.com)
 
@@ -33,8 +33,7 @@ everyone** by **providing a working knowledge of the concepts and terminology**
 	
 
 # Preliminaries
-### Goals
-
+## Goals
 
 Once this workshop is over you should feel comfortable:
 
@@ -47,14 +46,14 @@ Once this workshop is over you should feel comfortable:
 
 
 # Preliminaries
-### Materials
+## Materials
 
 Everything related to this presentation will be available online and
 version controlled:
 [github.com/PrincetonUniversity/intro2git](https://github.com/PrincetonUniversity/intro2git)
 
 
-![](../../images/this_repo.png)
+![](img/this_repo.png)
 
 *but clearly this picture was taken when it was still private*
 
@@ -80,7 +79,7 @@ Except, version control is more sophisticated:
 + we operate on an entire directory, not a single file
 
 # Version Control
-### Flavors
+## Flavors
 
 Although we'll focus on *git*, you may be familiar with others:
 
@@ -93,7 +92,7 @@ Although we'll focus on *git*, you may be familiar with others:
 + *subversion*
 
 # Version Control
-### Comparative Advantage
+## Comparative Advantage
 
 Target audience is projects making heavy use of plain text files:
 
@@ -103,7 +102,7 @@ Target audience is projects making heavy use of plain text files:
 
 + R, Stata, Python, C++
 
-### Comparative Disadvantage
+## Comparative Disadvantage
 
 Lots of binary files:
 
@@ -114,7 +113,7 @@ Lots of binary files:
 
 
 # git 
-### Use
+## Use
 
 + command line (cross platform) for now
 
@@ -124,13 +123,13 @@ Lots of binary files:
 \ 
 \ 
 
-### Assumptions
+## Assumptions
 
 1. you have installed *git*, and
 2. done the (simple) initial configuration
 
 # git
-### First Pass
+## First Pass
 
 + single-user
 
@@ -138,8 +137,7 @@ Lots of binary files:
 
 
 # git
-
-### Basic Operations
+## Basic Operations
 
 + creating a repository
 
@@ -154,7 +152,7 @@ Lots of binary files:
 + viewing the log
 
 # git 
-### Creating a Repo(sitory)
+## Creating a Repo(sitory)
 
 Inside your project directory, use `git init`:
 
@@ -171,7 +169,7 @@ Initialized empty Git repository in /Users/user/Desktop/bio/.git/
 
 
 # git
-### Adding Content
+## Adding Content
 
 I edit the file `bio.txt` to contain the beginning of a saga:
 
@@ -181,7 +179,7 @@ I was born in June.
 ```
 
 # git
-### How does *git* feel about this?
+## How does *git* feel about this?
 
 Check the status of our *git* repo with `git status`:
 
@@ -205,7 +203,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 # git
-### Tracking Files/Staging Changes to Old Files
+## Tracking Files/Staging Changes to Old Files
 
 We follow *git*'s directions and use `git add`:
 
@@ -221,7 +219,7 @@ machine:bio user$ git add bio.txt
 ```
 
 # git
-### 
+## 
 
 Checking the status again, we see:
 
@@ -239,7 +237,7 @@ machine:bio user$ git status
 ```
 
 # git
-### Committing 
+## Committing 
 
 We "save" these changes with `git commit`:
 
@@ -257,7 +255,7 @@ machine:bio user$ git commit -m "write first sentence"
 ```
 
 # git
-### Loop through the Process : edit
+## Loop through the Process : edit
 
 I write more content and *git* talks about it like:
 
@@ -274,7 +272,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
 # git
-### Loop through the Process : add
+## Loop through the Process : add
 
 
 I `add` all changed files to the stage:
@@ -291,7 +289,7 @@ machine:bio user$ git status
 ```
 
 # git
-### Loop through the Process : commit
+## Loop through the Process : commit
 
 Now I `commit` these changes to the repository:
 
@@ -302,7 +300,7 @@ machine:bio user$ git commit -m "mention my dog"
 ```
 
 # git
-### History
+## History
 
 Given that I've made significant progress, it might be time to see what I've done.
 
@@ -347,26 +345,26 @@ index 0000000..849edd4
 ## Workflow Summary
 ### Normal Workspace
 
-![](../../images/wf1_1.svg)
+![](img/wf1_1.svg)
 
 
 # git
 ## Workflow Summary
 ### Normal Workspace + *git* Locations
 
-![](../../images/wf1_2.svg)
+![](img/wf1_2.svg)
 
 # git
 ## Workflow Summary
 ### Git 
 
-![](../../images/wf1_3.svg)
+![](img/wf1_3.svg)
 
 # git
 ## Workflow Summary
 ### Git (for the fearless)
 
-![](../../images/wf1_4.svg)
+![](img/wf1_4.svg)
 
 # 
 
@@ -378,14 +376,14 @@ Breathe.
 
 
 # git + github
-### Second Pass
+## Second Pass
 
 + single-user
 
 + interact with a remote repo
 
 # git + github
-### github.com is:
+## github.com is:
 
 + the most popular *git* repo hosting site
 
@@ -393,7 +391,7 @@ Breathe.
 
 + credible signal (transparency makes it a costly)
 
-### github.com is **not**:
+## github.com is **not**:
 
 + wallet-friendly if you want to restrict who can see your project
 
@@ -412,25 +410,25 @@ You get:
 + teams with varying privileges that can have multiple members
 
 # git + github @ princeton
-### Create a github.com Account
+## Create a github.com Account
 
 Go to [https://github.com/signup/free](https://github.com/signup/free).
-![](../../images/signup.png)
+![](img/signup.png)
 
 # git + github @ princeton
-### Create an Organizational Affiliation
+## Create an Organizational Affiliation
 
 Go to [Princeton Research Computing](https://www.princeton.edu/researchcomputing/services/github/).
-![](../../images/princeton_signup.png)
+![](img/princeton_signup.png)
 
 # git + github @ princeton
-### Create a Remote Private Repo
-![](../../images/new_repo.png)
+## Create a Remote Private Repo
+![](img/new_repo.png)
 
 # git + github @ princeton
-### Clone the Remote Repo
+## Clone the Remote Repo
 
-![](../../images/clone.png)
+![](img/clone.png)
 
 ```
 machine:Desktop user$ git clone https://github.com/PrincetonUniversity/intro2git.git
@@ -442,7 +440,7 @@ Unpacking objects: 100% (80/80), done.
 ```
 
 # git + github @ princeton
-### Work on Content
+## Work on Content
 
 1. Edit
 2. `git add`
@@ -450,7 +448,7 @@ Unpacking objects: 100% (80/80), done.
 4. Go to Step 1
 
 # git + github @ princeton
-### Pushing Changes in your Commit History to your Remote Repo
+## Pushing Changes in your Commit History to your Remote Repo
 
 + *git* assumes we want to talk to the remote repository that we `clone`-ed
   1. if you created the repo on github
@@ -483,9 +481,6 @@ Everything up-to-date
 
 
 
-
-
-
 # git + github @ princeton w/ collaborators
 ### (A Brief) Third Pass
 
@@ -495,17 +490,17 @@ Everything up-to-date
 # git + github @ princeton w/ collaborators
 ### Remote
 
-![](../../images/wf2_1svg.svg)
+![](img/wf2_1svg.svg)
 
 # git + github @ princeton w/ collaborators
 ### Pushing to Remote
 
-![](../../images/wf2_2svg.svg)
+![](img/wf2_2svg.svg)
 
 # git + github @ princeton w/ collaborators
 ### Fetching from Remote
 
-![](../../images/wf2_3svg.svg)
+![](img/wf2_3svg.svg)
 
 # git + github @ princeton w/ collaborators
 ### Collaborating (in practice)
